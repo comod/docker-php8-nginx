@@ -52,5 +52,9 @@ composer-update: ## Run composer install
 composer-dumpautoload: ## Run composer dumpautoload
 	$(DOCKER_COMPOSE) run --rm composer dumpautoload
 
+################################################################
+## Test
+################################################################
+
 phpunit:
 	$(DOCKER_COMPOSE) exec php php vendor/bin/phpunit
